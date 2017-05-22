@@ -7,7 +7,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "start": "babel-node ./source/index --mongoDB=123"
+    "start": "babel-node ./source/index"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",

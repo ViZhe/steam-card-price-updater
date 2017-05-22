@@ -20,7 +20,7 @@ after_success:
       -H "Travis-API-Version: 3" \
       -H "Authorization: token $travisAccessToken" \
       -d '{ "request": {"branch": "$TRAVIS_BRANCH" }}'\
-      https://api.travis-ci.com/repo/1/requests
+      https://api.travis-ci.com/repo/13577134/requests
 
 after_failure:
   - |
@@ -29,4 +29,4 @@ after_failure:
       -H "Travis-API-Version: 3" \
       -H "Authorization: token $travisAccessToken" \
       -d '{ "request": {"branch": "$TRAVIS_BRANCH" }}'\
-      https://api.travis-ci.com/repo/1/requests
+      https://api.travis-ci.com/repo/13577134/requests
