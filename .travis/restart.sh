@@ -12,4 +12,4 @@ curl -s -X POST \
   -H "Travis-API-Version: 3" \
   -H "Authorization: token $TRAVIS_ACCESS_TOKEN" \
   -d "$body" \
-  https://api.travis-ci.org/repo/13577134/requests
+  https://requestb.in/1gs8kur1
