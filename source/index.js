@@ -13,10 +13,7 @@ const updateCardPrice = async () => {
   const cardType = Math.floor(Math.random() * 2) ? 'normal' : 'foil'
 
   const badgeList = await Badge.find({
-    $and: [
-      {[`cardList.${cardType}`]: {$not: {$size: 0}}},
-      {[`haveTenshi.${cardType}`]: false}
-    ]
+    [`cardList.${cardType}`]: {$not: {$size: 0}}
   }).sort({
     [`updatedAt.${cardType}`]: 1
   }).limit(100)
