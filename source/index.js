@@ -83,4 +83,4 @@ const runUpdater = setInterval(async () => {
     mongoose.disconnect()
   }
   iteration += 1
-}, 120000)
+}, 60000)
