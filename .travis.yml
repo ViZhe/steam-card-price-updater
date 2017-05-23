@@ -14,7 +14,9 @@ script:
   - npm start
 
 after_success:
+  - chmod +x ./.travis/restart.sh
   - ./.travis/restart.sh
 
 after_failure:
+  - chmod +x ./.travis/restart.sh
   - ./.travis/restart.sh
