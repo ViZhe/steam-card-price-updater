@@ -78,7 +78,7 @@ const runUpdater = setInterval(async () => {
   const result = await updateCardPrice()
   console.log(`[${result.status}] ${result.message}`)
 
-  if ((result.status === 'skip' && iteration > 10) || iteration === 35) {
+  if ((result.status === 'skip' && iteration > 21) || iteration === 42) {
     clearTimeout(runUpdater)
     mongoose.disconnect()
   }
