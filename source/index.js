@@ -7,7 +7,7 @@ import getPriceByHashName from './getPriceByHashName'
 
 
 mongoose.Promise = global.Promise
-mongoose.connect(process.env.MONGO_DB_URL)
+mongoose.connect(process.env.MONGO_DB_URL, {useMongoClient: true})
 
 const updateCardPrice = async () => {
   const cardType = Math.floor(Math.random() * 2) ? 'normal' : 'foil'
